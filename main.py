@@ -42,14 +42,12 @@ dados_uniforme = convert_counts_to_integers(counts_uniform)
 # ==========================================
 # Cenário 2: Distribuição Tendenciosa
 # ==========================================
-# Definimos a tendência utilizando Rz entre portas H
+# Definimos a tendência utilizando portas Ry ao invés de H -> Rz -> H
 theta = np.pi / 1.5  # Ângulo escolhido para favorecer o estado |1>
 qc_biased = QuantumCircuit(NUM_QUBITS, NUM_QUBITS)
 
 for i in range(NUM_QUBITS):
-    qc_biased.h(i)
-    qc_biased.rz(theta, i) # Porta Rz da dica do professor
-    qc_biased.h(i)
+    qc_biased.ry(theta, i)
 qc_biased.measure(range(NUM_QUBITS), range(NUM_QUBITS))
 
 # Execução Tendenciosa
@@ -80,3 +78,6 @@ plt.show()
 
 print(f"Média Uniforme: {np.mean(dados_uniforme):.2f} (Esperado ~500)")
 print(f"Média Tendenciosa: {np.mean(dados_tendenciosos):.2f} (Esperado > 500)")
+
+print(np.std(dados_uniforme))
+print(np.std(dados_tendenciosos))
