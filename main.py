@@ -78,6 +78,3 @@ plt.show()
 
 print(f"Média Uniforme: {np.mean(dados_uniforme):.2f} (Esperado ~500)")
 print(f"Média Tendenciosa: {np.mean(dados_tendenciosos):.2f} (Esperado > 500)")
-
-print(np.std(dados_uniforme))
-print(np.std(dados_tendenciosos))
