@@ -1,13 +1,13 @@
 # PUCPR - Escola Politécnica
 # Computação Quântica - Gerador de números aleatórios
-# Grupo 1: Kelvin C. Ribas, Marcos P. Ruppel, Rafael A. Souza, Rafaella Lemichka
+# Grupo 1: Kelvin C. Ribas, Marcos P. Ruppel, Rafael A. Souza, Rafaelle Lemichka
 
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Parâmetros
+# Parâmetros da simulação
 NUM_QUBITS = 10
 MAX_VALOR = 1000
 SHOTS = 10000 # Executar diversas vezes para verificar a distribuição
