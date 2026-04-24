@@ -35,7 +35,7 @@ O objetivo é comparar o comportamento estatístico das duas abordagens através
 
 Um número inteiro é gerado a partir da medição de um circuito com **10 qubits**, permitindo:
 
-$ 2^{10} = 1024 $ combinações possíveis (0 a 1023).
+$$2^{10} = 1024$$ combinações possíveis (0 a 1023).
 
 Como o projeto exige números entre **0 e 1000**, os valores maiores que 1000 são descartados.
 
